@@ -1,8 +1,10 @@
-import "dotenv/config";
-import consola from "consola";
+import 'dotenv/config';
+import debug from 'debug';
+
+const log = debug(`*`);
 
 const main = async () => {
-  consola.log(process.env);
+	log(process.env);
 };
 
 main();
