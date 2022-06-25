@@ -1,8 +1,10 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": "src/"
-  },
-  "include": ["src/app.ts"],
-  "exclude": ["node_modules"]
+	"extends": "@tsconfig/node18/tsconfig.json",
+	"compilerOptions": {
+		"module": "esnext",
+		"baseUrl": "src/",
+		"resolveJsonModule": true
+	},
+	"include": ["src/app.ts"],
+	"exclude": ["node_modules"]
 }

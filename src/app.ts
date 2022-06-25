@@ -1,10 +1,8 @@
 import 'dotenv/config';
 import debug from 'debug';
 
-const log = debug(`*`);
+if (!process.env.DEBUG) process.exit(1);
 
-const main = async () => {
-	log(process.env);
-};
+const log = debug(process.env.DEBUG);
 
-main();
+log(process.env);
